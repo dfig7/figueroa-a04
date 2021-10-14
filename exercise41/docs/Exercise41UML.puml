@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Class ReadAndSort{
+    + Method ReadNames: ArrayList<String>
+    ~reads names from file
+    ~places names in ArrayList and returns the list;
+
+    +Method SortNames(ArrayList names): void --> prints names in alphabetical order
+
+
+
+
+
+}
+
+class Solution41{
+    +main: tries Method ReadNames and
+    Method SortNames
+    +catches any exceptions
+}
+
+ReadAndSort --> Solution41
+
+
+@enduml

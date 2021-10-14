@@ -5,10 +5,30 @@ package baseline;
  *  Copyright 2021 Diego Figueroa
  */
 
-public class Solution41 {
-    //try to read file
-    //catch (NoSuchElementException | IllegalStateException | IOException e | FileNotFoundException)
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
 
-    //try to sort and write file
-    //catch (NoSuchElementException | IllegalStateException | IOException e | FileNotFoundException)
+public class Solution41 {
+    public static void main(String[] args) {
+        //call ReadAndSort class
+        ReadAndSort x = new ReadAndSort();
+        ArrayList<String> names = new ArrayList<>();
+        //try to read file
+        //catch FileNotFoundException)
+        try{
+            names = x.ReadNames();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        //try to sort and write file
+        // catch IOException e
+
+        try{
+            x.SortNames(names);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
