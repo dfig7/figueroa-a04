@@ -5,10 +5,27 @@ package baseline;
  *  Copyright 2021 Diego Figueroa
  */
 
+import java.io.FileNotFoundException;
+
 public class Solution42 {
 
     //method that reads the file and stores data into Employee class
     //use a while loop to store all names in an ArrayList
+    public static void main(String[] args) {
+        dataTable x = new dataTable();
+
+        try{
+            x.readData();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try{
+            x.printData();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     //have a method that prints every employee
     //String(counter: data)

@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+class dataTable{
++method readData
+    -opens file and reads each line
+    -places names and salary in a new employee class
+    -places all employees in data list
+
++method printData
+    -prints data
+
+
+}
+
+class Employee{
+    +firstName
+    +lastName
+    +salary
+}
+
+class data{
+    -actually an ArrayList
+}
+
+dataTable <--"places" data
+data <--"inside" Employee
+@enduml
