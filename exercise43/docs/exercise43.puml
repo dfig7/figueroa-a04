@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Website{
+    +siteName
+    +siteAuthor
+    +startingPath
+
+    -creates website by creating each folder for html
+
+}
+
+class Solution43{
++main
+   calls all methods from website
+}
+
+Website --> Solution43
+@enduml
