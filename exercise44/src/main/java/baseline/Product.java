@@ -5,8 +5,8 @@ package baseline;
  *  Copyright 2021 Diego Figueroa
  */
 
-public class Product {
-    //String name
-    //String price
-    //String quantity
+public class Product{
+    public String name;
+    public double price;
+    public long quantity;
 }

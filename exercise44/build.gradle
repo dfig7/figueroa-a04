@@ -11,8 +11,16 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    implementation 'org.json:json:20210307'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.xkcoding.json:simple-json:0.0.3'
+    implementation 'net.pwall.json:json-simple:1.3.1'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.solidfire.code.gson:gson:2.6.2'
+    implementation 'com.github.cliftonlabs:json-simple:3.1.0'
+    implementation 'io.jddf.gson:jddf-gson:0.1.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 test {

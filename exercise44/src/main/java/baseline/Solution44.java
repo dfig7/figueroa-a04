@@ -8,5 +8,9 @@ package baseline;
 public class Solution44 {
 
     //main
+    public static void main(String[] args) {
+        ProductSearch x = new ProductSearch();
+        x.getProduct();
+    }
 
 }
