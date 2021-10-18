@@ -1,11 +1,28 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-autonumber
+class WordFinder{
++String fileText
+-gets edited in replaceText
+-gets printed in another file in createOutput
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
++String getText()
++void readFile()
++void replaceText()
++void createOutput()
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+}
+
+class Solution45{
+~WordFinder x = new WordFinder
++main()
+~x.readFile()
+~x.replaceText()
+-x.createOutput()
+
+
+
+}
+
+WordFinder -->"Used in" Solution45
 @enduml

@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Word{
++String word
++int frequency
+
+}
+
+class WordFrequencyFinder{
+    +String fullText
+    +ArrayList wordList
+
+    ~addFrequency()
+    ~findWord()
+    ~createWord()
+
+}
+
+class Solution46{
+~main()
+
+}
+
+Word -> WordFrequencyFinder
+WordFrequencyFinder --> Solution46
+@enduml
