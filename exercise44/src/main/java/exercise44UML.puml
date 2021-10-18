@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+class Product{
+
+    +String name
+    +double price
+    +long quantity
+
+}
+
+class ProductSearch{
+
+ +ArrayList<Product> mainProductList
+
++boolean readData()
++findProduct(name)
++void getProduct()
+
+
+}
+
+class Solution44{
+~ProductSearch x = new ProductSearch
+
+~main()
+~x.getProduct()
+
+}
+
+Product "implemented" --|> ProductSearch
+
+ProductSearch -->"used in" Solution44
+@enduml

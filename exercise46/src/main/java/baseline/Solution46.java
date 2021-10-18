@@ -1,2 +1,4 @@
-package baseline;public class Solution46 {
+package baseline;
+
+public class Solution46 {
 }
